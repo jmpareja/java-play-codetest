@@ -13,3 +13,17 @@ To test how quickly you can pick up a new project and follow requirements we ask
 Bonus points: 
 
 - An API is great, but how about adding some UI for easy upload of the file. 
+
+
+Solution By Joel M. Pareja (2017.05.18)
+
+On server-side:
+ $ git clone https://github.com/jmpareja/java-play-codetest
+ $ cd java-play-code-test
+ $ sbt run
+
+On client-side: (i.e. using httpie)
+ $ http POST localhost:9000/customer-api/sortData < customers.json
+
+ Note:No UI yet!
+
